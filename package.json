@@ -1,0 +1,23 @@
+{
+    "name": "users",
+    "version": "1.0.0",
+    "description": "Users Service",
+    "main": "handler.js",
+    "scripts": {
+        "deploy": "serverless deploy",
+        "remove": "serverless remove"
+    },
+    "engines": {
+        "node": ">=14.15.0"
+    },
+    "type": "module",
+    "dependencies": {
+        "@aws-sdk/client-dynamodb": "^3.53.0",
+        "@aws-sdk/client-s3": "^3.53.1",
+        "@aws-sdk/lib-dynamodb": "^3.53.0"
+    },
+    "devDependencies": {
+        "serverless": "^3.16.0",
+        "serverless-lift": "^1.15.1"
+    }
+}
